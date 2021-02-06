@@ -17,11 +17,16 @@ namespace WindowsFormsTrucks
         {
             InitializeComponent();
         }
+        public void SetTruck(ITransport truck)
+        {
+            this.truck = truck;
+            Draw();
+        }
         private void Draw()
         {
             Bitmap bmp = new Bitmap(pictureBoxTruck.Width, pictureBoxTruck.Height);
             Graphics gr = Graphics.FromImage(bmp);
-            truck.DrawTruck(gr);
+            truck?.DrawTruck(gr);
             pictureBoxTruck.Image = bmp;
         }
         private void Create_Truck_Click(object sender, EventArgs e)
@@ -44,16 +49,16 @@ namespace WindowsFormsTrucks
             switch (name)
             {
                 case "Up":
-                    truck.MoveTruck(Direction.Up);
+                    truck?.MoveTruck(Direction.Up);
                     break;
                 case "Down":
-                    truck.MoveTruck(Direction.Down);
+                    truck?.MoveTruck(Direction.Down);
                     break;
                 case "Left":
-                    truck.MoveTruck(Direction.Left);
+                    truck?.MoveTruck(Direction.Left);
                     break;
                 case "Right":
-                    truck.MoveTruck(Direction.Right);
+                    truck?.MoveTruck(Direction.Right);
                     break;
             }
             Draw();

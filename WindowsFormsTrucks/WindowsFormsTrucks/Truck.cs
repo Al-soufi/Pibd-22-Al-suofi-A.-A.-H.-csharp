@@ -7,13 +7,12 @@ using System.Drawing;
 
 namespace WindowsFormsTrucks
 {
-
     public class Truck : Vehicle
     {
         protected readonly int truckWidth = 210;
         protected readonly int truckHeight = 75;
         public bool Body { private set; get; }
-        
+
         public Truck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool body, bool design)
         {
             MaxSpeed = maxSpeed;
@@ -64,7 +63,7 @@ namespace WindowsFormsTrucks
                     break;
             }
         }
-
+        
         public override void DrawTruck(Graphics g)
         {
             Brush wil = new SolidBrush(Color.Black);
