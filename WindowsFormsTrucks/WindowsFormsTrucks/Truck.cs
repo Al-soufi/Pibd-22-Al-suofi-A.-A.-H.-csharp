@@ -7,21 +7,13 @@ using System.Drawing;
 
 namespace WindowsFormsTrucks
 {
-    public class Truck
-    {
-        private float start_X;
-        private float start_Y;
-        private int pic_Width;
-        private int pic_Height;
-        private readonly int truckWidth = 210;
-        private readonly int truckHeight = 75;
-        public int MaxSpeed { private set; get; }
-        public float Weight { private set; get; }
-        public Color MainColor { private set; get; }
-        public Color DopColor { private set; get; }
-        public bool Body { private set; get; }
-        public bool Design { private set; get; }
 
+    public class Truck : Vehicle
+    {
+        protected readonly int truckWidth = 210;
+        protected readonly int truckHeight = 75;
+        public bool Body { private set; get; }
+        
         public Truck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool body, bool design)
         {
             MaxSpeed = maxSpeed;
@@ -31,14 +23,17 @@ namespace WindowsFormsTrucks
             Body = body;
             Design = design;
         }
-        public void Position(int x, int y, int width, int height)
+        protected Truck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool design, int truckWidth, int truckHeight)
         {
-            start_X = x;
-            start_Y = y;
-            pic_Width = width;
-            pic_Height = height;
+            MaxSpeed = maxSpeed;
+            Weight = weight;
+            MainColor = mainColor;
+            DopColor = dopColor;
+            Design = design;
+            this.truckWidth = truckWidth;
+            this.truckHeight = truckHeight;
         }
-        public void MoveTruck(Direction direction)
+        public override void MoveTruck(Direction direction)
         {
             float step = MaxSpeed * 100 / Weight;
             switch (direction)
@@ -69,11 +64,11 @@ namespace WindowsFormsTrucks
                     break;
             }
         }
-        public void DrawTruck(Graphics g)
+
+        public override void DrawTruck(Graphics g)
         {
             Brush wil = new SolidBrush(Color.Black);
             g.FillRectangle(wil, start_X + 10, start_Y + 55, 170, 15);
-
             Brush body = new SolidBrush(DopColor);
             Brush design = new SolidBrush(Color.Gray);
             Brush win = new SolidBrush(Color.White);
@@ -93,7 +88,7 @@ namespace WindowsFormsTrucks
                 g.FillRectangle(body, start_X + 95, start_Y + 5, 5, 50);
                 g.FillRectangle(body, start_X + 110, start_Y + 5, 5, 50);
                 g.FillRectangle(body, start_X + 125, start_Y + 5, 5, 50);
-                g.FillRectangle(body, start_X + 140, start_Y + 5, 5, 50); 
+                g.FillRectangle(body, start_X + 140, start_Y + 5, 5, 50);
             }
             //راس الشاحنه
             g.FillRectangle(body, start_X + 155, start_Y + 10, 50, 50);
@@ -123,8 +118,6 @@ namespace WindowsFormsTrucks
                 g.FillRectangle(design, start_X + 148, start_Y + 45, 7, 10);
                 //الخزان والثربه
                 g.FillRectangle(design, start_X + 117, start_Y + 60, 25, 13);
-                g.FillRectangle(design, start_X + 192, start_Y + 55, 10, 7);
-                g.FillRectangle(design, start_X + 163, start_Y + 49, 30, 13);
                 //حلقات التوائر الوسط
                 g.FillEllipse(design, start_X + 18, start_Y + 63, 14, 14);
                 g.FillEllipse(design, start_X + 38, start_Y + 63, 14, 14);

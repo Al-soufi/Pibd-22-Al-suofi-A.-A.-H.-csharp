@@ -12,7 +12,7 @@ namespace WindowsFormsTrucks
 {
     public partial class FormTruck : Form
     {
-        private Truck truck;
+        private ITransport truck;
         public FormTruck()
         {
             InitializeComponent();
@@ -28,8 +28,14 @@ namespace WindowsFormsTrucks
         {
             Random rnd = new Random();
             truck = new Truck(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Orange, Color.Yellow, true, true);
-            truck.Position(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxTruck.Width,
-           pictureBoxTruck.Height);
+            truck.Position(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxTruck.Width, pictureBoxTruck.Height);
+            Draw();
+        }
+        private void Create_DumpTruck_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            truck = new DumpTruck(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.White, Color.Blue, true, true);
+            truck.Position(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxTruck.Width, pictureBoxTruck.Height);
             Draw();
         }
         private void Move_Click(object sender, EventArgs e)

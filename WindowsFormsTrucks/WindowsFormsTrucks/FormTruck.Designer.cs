@@ -34,6 +34,7 @@
             this.Right = new System.Windows.Forms.Button();
             this.Down = new System.Windows.Forms.Button();
             this.Left = new System.Windows.Forms.Button();
+            this.Create_DumpTruck = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTruck)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,12 +50,12 @@
             // Create_Truck
             // 
             this.Create_Truck.BackColor = System.Drawing.SystemColors.Control;
-            this.Create_Truck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Create_Truck.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Create_Truck.Location = new System.Drawing.Point(10, 10);
             this.Create_Truck.Name = "Create_Truck";
-            this.Create_Truck.Size = new System.Drawing.Size(80, 30);
+            this.Create_Truck.Size = new System.Drawing.Size(111, 30);
             this.Create_Truck.TabIndex = 1;
-            this.Create_Truck.Text = "Create";
+            this.Create_Truck.Text = "Create автомобиль";
             this.Create_Truck.UseVisualStyleBackColor = false;
             this.Create_Truck.Click += new System.EventHandler(this.Create_Truck_Click);
             // 
@@ -102,11 +103,23 @@
             this.Left.UseVisualStyleBackColor = true;
             this.Left.Click += new System.EventHandler(this.Move_Click);
             // 
+            // Create_DumpTruck
+            // 
+            this.Create_DumpTruck.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Create_DumpTruck.Location = new System.Drawing.Point(141, 10);
+            this.Create_DumpTruck.Name = "Create_DumpTruck";
+            this.Create_DumpTruck.Size = new System.Drawing.Size(162, 30);
+            this.Create_DumpTruck.TabIndex = 3;
+            this.Create_DumpTruck.Text = "Create гоночный автомобиль";
+            this.Create_DumpTruck.UseVisualStyleBackColor = true;
+            this.Create_DumpTruck.Click += new System.EventHandler(this.Create_DumpTruck_Click);
+            // 
             // FormTruck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 561);
+            this.Controls.Add(this.Create_DumpTruck);
             this.Controls.Add(this.Left);
             this.Controls.Add(this.Down);
             this.Controls.Add(this.Right);
@@ -129,6 +142,8 @@
         private System.Windows.Forms.Button Right;
         private System.Windows.Forms.Button Down;
         private System.Windows.Forms.Button Left;
+        private System.Windows.Forms.Button Create_DumpTruck;
+
     }
 }
 
