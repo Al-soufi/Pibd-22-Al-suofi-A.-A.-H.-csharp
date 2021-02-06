@@ -54,6 +54,7 @@
     <Compile Include="FormTruck.Designer.cs">
       <DependentUpon>FormTruck.cs</DependentUpon>
     </Compile>
+
     <Compile Include="ITransport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

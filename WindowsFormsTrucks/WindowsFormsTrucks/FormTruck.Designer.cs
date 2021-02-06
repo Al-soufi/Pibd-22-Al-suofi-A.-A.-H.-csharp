@@ -143,6 +143,7 @@
         private System.Windows.Forms.Button Down;
         private System.Windows.Forms.Button Left;
         private System.Windows.Forms.Button Create_DumpTruck;
+
     }
 }
 
