@@ -102,6 +102,7 @@
             this.labelParking.Size = new System.Drawing.Size(52, 16);
             this.labelParking.TabIndex = 0;
             this.labelParking.Text = "Место:";
+
             // 
             // pictureBoxParking
             // 
@@ -179,7 +180,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxParking)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
