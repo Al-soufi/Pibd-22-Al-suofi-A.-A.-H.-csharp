@@ -106,9 +106,9 @@
             this.ResumeLayout(false);
 
         }
-
+      
         #endregion
-
+          
         private System.Windows.Forms.PictureBox pictureBoxTruck;
         private System.Windows.Forms.Button Up;
         private System.Windows.Forms.Button Right;
