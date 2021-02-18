@@ -10,6 +10,7 @@ namespace WindowsFormsTrucks
     public class ParkingCollection
     {
         readonly Dictionary<string, Parking<Vehicle>> parkingStages;
+
         public List<string> Keys => parkingStages.Keys.ToList();
 
         private readonly int Pic_Width;
@@ -68,8 +69,7 @@ namespace WindowsFormsTrucks
                 foreach (var level in parkingStages)
                 {
                     WriteToFile($"Parking{separator}{level.Key}{Environment.NewLine}", fs);
-                    ITransport truck = null;
-                    for (int i = 0; (truck = level.Value.GetNext(i)) != null; i++)
+                    foreach (ITransport truck in level.Value)
                     {
                         if (truck.GetType().Name == "Truck")
                         {

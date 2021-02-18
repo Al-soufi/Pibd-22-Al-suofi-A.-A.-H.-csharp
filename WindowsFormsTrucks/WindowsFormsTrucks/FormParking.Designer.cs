@@ -46,6 +46,7 @@
             this.lodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.Sort = new System.Windows.Forms.Button();
             this.groupBoxParking.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxParking)).BeginInit();
             this.MenuStrip.SuspendLayout();
@@ -147,7 +148,7 @@
             // Set_Truck
             // 
             this.Set_Truck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Set_Truck.Location = new System.Drawing.Point(1025, 350);
+            this.Set_Truck.Location = new System.Drawing.Point(1025, 371);
             this.Set_Truck.Name = "Set_Truck";
             this.Set_Truck.Size = new System.Drawing.Size(117, 50);
             this.Set_Truck.TabIndex = 10;
@@ -178,19 +179,19 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(97, 6);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // lodeToolStripMenuItem
             // 
             this.lodeToolStripMenuItem.Name = "lodeToolStripMenuItem";
-            this.lodeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lodeToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.lodeToolStripMenuItem.Text = "Load";
             this.lodeToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
@@ -202,11 +203,22 @@
             // 
             this.saveFileDialog.Filter = "txt file | *.txt";
             // 
+            // Sort
+            // 
+            this.Sort.Location = new System.Drawing.Point(1025, 315);
+            this.Sort.Name = "Sort";
+            this.Sort.Size = new System.Drawing.Size(117, 50);
+            this.Sort.TabIndex = 12;
+            this.Sort.Text = "Сортировать";
+            this.Sort.UseVisualStyleBackColor = true;
+            this.Sort.Click += new System.EventHandler(this.Sort_Click);
+            // 
             // FormParking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 591);
+            this.Controls.Add(this.Sort);
             this.Controls.Add(this.Set_Truck);
             this.Controls.Add(this.listBoxParking);
             this.Controls.Add(this.label1);
@@ -227,6 +239,7 @@
             this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -249,5 +262,6 @@
         private System.Windows.Forms.ToolStripMenuItem lodeToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.Button Sort;
     }
 }

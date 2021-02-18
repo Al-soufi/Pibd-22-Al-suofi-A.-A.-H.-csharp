@@ -7,14 +7,14 @@ using System.Drawing;
 
 namespace WindowsFormsTrucks
 {
-    public class Truck : Vehicle
+    public class Truck : Vehicle, IEquatable<Truck>
     {
         protected readonly int truckWidth = 210;
         protected readonly int truckHeight = 75;
         protected readonly char separator = ';';
 
         public bool Body { private set; get; }
-        
+
         public Truck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool body, bool design)
         {
             MaxSpeed = maxSpeed;
@@ -146,6 +146,57 @@ namespace WindowsFormsTrucks
             //الطاقات
             g.FillRectangle(win, start_X + 165, start_Y + 20, 10, 20);
             g.FillRectangle(win, start_X + 180, start_Y + 20, 20, 25);
+        }
+        public bool Equals(Truck other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+            if (GetType().Name != other.GetType().Name)
+            {
+                return false;
+            }
+            if (MaxSpeed != other.MaxSpeed)
+            {
+                return false;
+            }
+            if (Weight != other.Weight)
+            {
+                return false;
+            }
+            if (MainColor != other.MainColor)
+            {
+                return false;
+            }
+            if (DopColor != other.DopColor)
+            {
+                return false;
+            }
+            if (Design != other.Design)
+            {
+                return false;
+            }
+            if (Body != other.Body)
+            {
+                return false;
+            }
+            return true;
+        }
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (!(obj is Truck carObj))
+            {
+                return false;
+            }
+            else
+            {
+                return Equals(carObj);
+            }
         }
     }
 }

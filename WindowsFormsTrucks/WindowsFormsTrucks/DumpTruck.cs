@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace WindowsFormsTrucks
 {
-    public class DumpTruck : Truck
+    public class DumpTruck : Truck, IEquatable<DumpTruck>
     {
         public bool Back { private set; get; }
         public DumpTruck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool back, bool design)
@@ -51,6 +51,57 @@ namespace WindowsFormsTrucks
                 g.FillRectangle(line, start_X + 7, start_Y + 27, 137, 9);
             }
             base.DrawTruck(g);
+        }
+        public bool Equals(DumpTruck other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+            if (GetType().Name != other.GetType().Name)
+            {
+                return false;
+            }
+            if (MaxSpeed != other.MaxSpeed)
+            {
+                return false;
+            }
+            if (Weight != other.Weight)
+            {
+                return false;
+            }
+            if (MainColor != other.MainColor)
+            {
+                return false;
+            }
+            if (DopColor != other.DopColor)
+            {
+                return false;
+            }
+            if (Design != other.Design)
+            {
+                return false;
+            }
+            if (Back != other.Back)
+            {
+                return false;
+            }
+            return true;
+        }
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (!(obj is DumpTruck carObj))
+            {
+                return false;
+            }
+            else
+            {
+                return Equals(carObj);
+            }
         }
     }
 }

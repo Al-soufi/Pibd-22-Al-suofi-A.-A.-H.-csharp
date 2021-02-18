@@ -175,5 +175,16 @@ namespace WindowsFormsTrucks
                 }
             }
         }
+
+        private void Sort_Click(object sender, EventArgs e)
+        {
+            if (listBoxParking.SelectedIndex > -1)
+            {
+                parkingCollection[listBoxParking.SelectedItem.ToString()].Sort();
+                Draw();
+                logger.Info("Сортировка уровней");
+            }
+        }
     }
 }
+
