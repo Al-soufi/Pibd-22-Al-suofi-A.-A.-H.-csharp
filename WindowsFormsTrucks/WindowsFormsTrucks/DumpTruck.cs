@@ -13,12 +13,7 @@ namespace WindowsFormsTrucks
         public DumpTruck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool back, bool design)
             : base(maxSpeed, weight, mainColor, dopColor, design, 210, 75)
         {
-            MaxSpeed = maxSpeed;
-            Weight = weight;
-            MainColor = mainColor;
-            DopColor = dopColor;
             Back = back;
-            Design = design;
         }
         public override void DrawTruck(Graphics g)
         {

@@ -27,5 +27,13 @@ namespace WindowsFormsTrucks
         }
         public abstract void DrawTruck(Graphics g);
         public abstract void MoveTruck(Direction direction);
+        public void SetMainColor(Color color)
+        {
+            MainColor = color;
+        }
+        public void SetDopColor(Color color)
+        {
+            DopColor = color;
+        }
     }
 }

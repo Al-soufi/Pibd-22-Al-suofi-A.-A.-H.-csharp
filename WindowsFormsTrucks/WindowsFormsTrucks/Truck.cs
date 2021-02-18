@@ -63,7 +63,7 @@ namespace WindowsFormsTrucks
                     break;
             }
         }
-        
+
         public override void DrawTruck(Graphics g)
         {
             Brush wil = new SolidBrush(Color.Black);

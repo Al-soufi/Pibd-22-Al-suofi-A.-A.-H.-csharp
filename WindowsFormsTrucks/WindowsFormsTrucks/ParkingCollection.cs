@@ -13,10 +13,11 @@ namespace WindowsFormsTrucks
 
         private readonly int Pic_Width;
         private readonly int Pic_Height;
-        public ParkingCollection(int Pic_Width, int Pic_Height)
+
+        public ParkingCollection(int pic_Width, int Pic_Height)
         {
             parkingStages = new Dictionary<string, Parking<Vehicle>>();
-            this.Pic_Width = Pic_Width;
+            this.Pic_Width = pic_Width;
             this.Pic_Height = Pic_Height;
         }
         public void AddParking(string name)
@@ -28,6 +29,7 @@ namespace WindowsFormsTrucks
 
             parkingStages.Add(name, new Parking<Vehicle>(Pic_Width, Pic_Height));
         }
+
         public void DelParking(string name)
         {
             if (parkingStages.ContainsKey(name))

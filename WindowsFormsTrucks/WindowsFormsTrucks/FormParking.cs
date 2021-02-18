@@ -46,62 +46,6 @@ namespace WindowsFormsTrucks
                 pictureBoxParking.Image = bmp;
             }
         }
-        private void ParkingTruck_Click(object sender, EventArgs e)
-        {
-            ColorDialog dialog = new ColorDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                ColorDialog dialogDop = new ColorDialog();
-                if (dialogDop.ShowDialog() == DialogResult.OK)
-                {
-                    var truck = new Truck(100, 1000, dialog.Color, dialogDop.Color, true, true);
-                    if (parkingCollection[listBoxParking.SelectedItem.ToString()] + truck)
-                    {
-                        Draw();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Нет свободных мест", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
-        }
-        private void ParkingDumpTruck_Click(object sender, EventArgs e)
-        {
-            ColorDialog dialog = new ColorDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                ColorDialog dialogDop = new ColorDialog();
-                if (dialogDop.ShowDialog() == DialogResult.OK)
-                {
-                    var truck = new DumpTruck(100, 1000, dialog.Color, dialogDop.Color, true, true);
-                    if (parkingCollection[listBoxParking.SelectedItem.ToString()] + truck)
-                    {
-                        Draw();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Нет свободных мест", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-            }
-        }
-        private void Take_Click(object sender, EventArgs e)
-        {
-            if (listBoxParking.SelectedIndex > -1 && maskedTextBoxParking.Text != "")
-            {
-                var truck = parkingCollection[listBoxParking.SelectedItem.ToString()] - Convert.ToInt32(maskedTextBoxParking.Text);
-                if (truck != null)
-                {
-                    {
-                        FormTruck form = new FormTruck();
-                        form.SetTruck(truck);
-                        form.ShowDialog();
-                    }
-                    Draw();
-                }
-            }
-        }
         private void Add_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxName.Text))
@@ -123,9 +67,46 @@ namespace WindowsFormsTrucks
                 }
             }
         }
+        private void Take_Click(object sender, EventArgs e)
+        {
+            if (listBoxParking.SelectedIndex > -1 && maskedTextBoxParking.Text != "")
+            {
+                var truck = parkingCollection[listBoxParking.SelectedItem.ToString()] - Convert.ToInt32(maskedTextBoxParking.Text);
+                if (truck != null)
+                {
+                    {
+                        FormTruck form = new FormTruck();
+                        form.SetTruck(truck);
+                        form.ShowDialog();
+                    }
+                    Draw();
+                }
+            }
+        }
         private void listBoxParking_SelectedIndexChanged(object sender, EventArgs e)
         {
             Draw();
         }
+        private void Set_Truck_Click(object sender, EventArgs e)
+        {
+            var formtruckconfig = new FormTruckConfig();
+            formtruckconfig.AddEvent(AddTruck);
+            formtruckconfig.Show();
+        }
+        private void AddTruck(Vehicle Truck)
+        {
+            if (Truck != null && listBoxParking.SelectedIndex > -1)
+            {
+                if ((parkingCollection[listBoxParking.SelectedItem.ToString()]) + Truck)
+                {
+                    Draw();
+                }
+                else
+                {
+                    MessageBox.Show("Машину не удалось поставить");
+                }
+            }
+        }
     }
 }
+

@@ -59,7 +59,7 @@ namespace WindowsFormsTrucks
             {
                 for (int j = 0; j < pictureHeight / place_Height + 1; ++j)
                 {
-                    g.DrawLine(pen, i * place_Width, j * place_Height, i * place_Width + 170  , j * place_Height);
+                    g.DrawLine(pen, i * place_Width, j * place_Height, i * place_Width + 170, j * place_Height);
                 }
                 g.DrawLine(pen, i * place_Width, 0, i * place_Width, (pictureHeight / place_Height) * place_Height);
             }

@@ -12,5 +12,7 @@ namespace WindowsFormsTrucks
         void Position(int x, int y, int width, int height);
         void MoveTruck(Direction direction);
         void DrawTruck(Graphics g);
+        void SetMainColor(Color color);
+        void SetDopColor(Color color);
     }
 }

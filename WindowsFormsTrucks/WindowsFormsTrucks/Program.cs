@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsTrucks
 {
+    public delegate void TruckDelegate(Vehicle truck);
     static class Program
     {
         [STAThread]
