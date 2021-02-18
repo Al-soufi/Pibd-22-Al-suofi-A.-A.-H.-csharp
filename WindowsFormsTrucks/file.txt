@@ -1,0 +1,114 @@
+2021-02-15 18:09:59.2303|INFO|WindowsFormsTrucks.FormParking|Добавили парковку c
+2021-02-15 18:10:00.1351|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:10:06.8690|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;True;True
+2021-02-15 18:10:11.0266|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;True;True
+2021-02-15 18:10:34.7606|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:10:37.6152|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;False;False
+2021-02-15 18:10:40.0679|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:10:42.1746|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;False;False
+2021-02-15 18:10:44.2340|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:10:46.4537|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;False;False
+2021-02-15 18:10:50.2580|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:10:52.5668|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;False;False
+2021-02-15 18:10:54.9159|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;False;False
+2021-02-15 18:10:57.6965|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:10:59.4678|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:01.7106|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:04.2439|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;False;False
+2021-02-15 18:11:05.9656|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:07.8396|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;False;False
+2021-02-15 18:11:09.4738|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:10.9514|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:12.5778|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:14.0807|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:15.6095|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:17.7968|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:19.2115|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;False;False
+2021-02-15 18:11:50.2934|INFO|WindowsFormsTrucks.FormParking|Добавили парковку c
+2021-02-15 18:11:50.2934|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:11:50.8321|INFO|WindowsFormsTrucks.FormParking|Добавили парковку c
+2021-02-15 18:11:50.8388|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:11:51.0254|INFO|WindowsFormsTrucks.FormParking|Добавили парковку c
+2021-02-15 18:11:51.0254|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:12:14.8685|INFO|WindowsFormsTrucks.FormParking|Сохранено в файл C:\Users\engal\Desktop\c.txt
+2021-02-15 18:12:20.5867|INFO|WindowsFormsTrucks.FormParking|Загружено из файла C:\Users\engal\Desktop\c.txt
+2021-02-15 18:12:20.5867|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:12:21.9074|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:12:22.6956|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:12:26.3730|INFO|WindowsFormsTrucks.FormParking|Добавили парковку cv
+2021-02-15 18:12:26.3800|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:12:35.2983|INFO|WindowsFormsTrucks.FormParking|Сохранено в файл C:\Users\engal\Desktop\c.txt
+2021-02-15 18:12:40.6122|INFO|WindowsFormsTrucks.FormParking|Загружено из файла C:\Users\engal\Desktop\c.txt
+2021-02-15 18:12:40.6232|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:12:41.5964|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:12:42.3116|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуcv
+2021-02-15 18:12:42.8907|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:12:52.4328|INFO|WindowsFormsTrucks.FormParking|Добавили парковку v
+2021-02-15 18:12:52.4847|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуv
+2021-02-15 18:12:58.6285|INFO|WindowsFormsTrucks.FormParking|Загружено из файла C:\Users\engal\Desktop\c.txt
+2021-02-15 18:12:58.6475|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-15 18:13:04.9594|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуcv
+2021-02-15 19:26:41.0326|INFO|WindowsFormsTrucks.FormParking|Добавили парковку x
+2021-02-15 19:26:41.1907|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуx
+2021-02-15 19:27:10.5674|INFO|WindowsFormsTrucks.FormParking|Загружено из файла C:\Users\engal\Desktop\c.txt
+2021-02-15 19:27:10.5774|INFO|WindowsFormsTrucks.FormParking|Перешли на парковкуc
+2021-02-17 11:00:32.2520|INFO|WindowsFormsTrucks.FormParking|Добавили парковку 1
+2021-02-17 11:00:32.8612|INFO|WindowsFormsTrucks.FormParking|Перешли на парковку1
+2021-02-17 11:00:39.2146|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;True;True
+2021-02-17 11:00:43.6454|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;True;True
+2021-02-17 11:01:02.9627|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Red;Gray;True;True
+2021-02-17 11:01:13.7804|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Black;Pink;False;True;True
+2021-02-17 11:01:25.7964|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Pink;Black;False;True;True
+2021-02-17 11:01:30.0519|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:30.8157|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:31.4092|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:31.9556|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:32.6073|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:32.9042|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:33.0903|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:33.4203|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:33.9430|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:34.5049|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:35.0692|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:35.7610|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:01:36.2511|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:16.4465|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:24.7385|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:25.9470|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:26.9578|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:27.8066|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:28.4456|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:28.9201|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:28.9201|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:29.2847|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:29.2959|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:29.7126|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:29.7546|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:30.5104|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:31.0969|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:35.1462|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;False;False
+2021-02-17 11:03:36.5459|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:37.4688|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:38.1775|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:38.6838|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:39.1420|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:39.4489|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:39.6407|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:39.7943|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:03:40.1165|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:03.7576|INFO|WindowsFormsTrucks.FormParking|Добавили парковку 2
+2021-02-17 11:04:03.7882|INFO|WindowsFormsTrucks.FormParking|Перешли на парковку1
+2021-02-17 11:04:06.2434|INFO|WindowsFormsTrucks.FormParking|Перешли на парковку2
+2021-02-17 11:04:10.5726|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;White;Blue;False;True;True
+2021-02-17 11:04:13.6942|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Orange;Yellow;True;True
+2021-02-17 11:04:24.2853|INFO|WindowsFormsTrucks.FormParking|Добавлен автомобиль 50;100;Purple;Pink;False;True;True
+2021-02-17 11:04:25.8293|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:26.6331|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:27.1881|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:27.6074|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:27.8001|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:27.9933|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:28.9024|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:29.1033|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:29.2642|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней
+2021-02-17 11:04:29.4734|INFO|WindowsFormsTrucks.FormParking|Сортировка уровней

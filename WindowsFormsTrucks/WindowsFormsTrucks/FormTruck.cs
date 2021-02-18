@@ -29,7 +29,6 @@ namespace WindowsFormsTrucks
             truck?.DrawTruck(gr);
             pictureBoxTruck.Image = bmp;
         }
-
         private void Move_Click(object sender, EventArgs e)
         {
             string name = (sender as Button).Name;
