@@ -10,7 +10,6 @@ namespace WindowsFormsTrucks
     public class ParkingCollection
     {
         readonly Dictionary<string, Parking<Vehicle>> parkingStages;
-
         public List<string> Keys => parkingStages.Keys.ToList();
 
         private readonly int Pic_Width;

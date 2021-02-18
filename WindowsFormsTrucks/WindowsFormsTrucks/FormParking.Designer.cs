@@ -227,7 +227,6 @@
             this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

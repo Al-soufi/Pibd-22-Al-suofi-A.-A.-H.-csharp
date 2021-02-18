@@ -14,6 +14,7 @@ namespace WindowsFormsTrucks
         protected readonly char separator = ';';
 
         public bool Body { private set; get; }
+        
         public Truck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool body, bool design)
         {
             MaxSpeed = maxSpeed;
