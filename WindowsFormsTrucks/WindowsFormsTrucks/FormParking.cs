@@ -63,7 +63,6 @@ namespace WindowsFormsTrucks
                     {
                         MessageBox.Show("Нет свободных мест", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-
                 }
             }
         }

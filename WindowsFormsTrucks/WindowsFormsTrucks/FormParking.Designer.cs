@@ -75,7 +75,6 @@
             this.groupBoxParking.TabIndex = 2;
             this.groupBoxParking.TabStop = false;
             this.groupBoxParking.Text = "Забрать машину";
-            // 
             // Take
             // 
             this.Take.Location = new System.Drawing.Point(27, 59);
@@ -179,7 +178,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxParking)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
