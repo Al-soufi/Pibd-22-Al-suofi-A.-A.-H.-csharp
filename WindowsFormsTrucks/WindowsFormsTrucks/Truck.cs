@@ -11,6 +11,8 @@ namespace WindowsFormsTrucks
     {
         protected readonly int truckWidth = 210;
         protected readonly int truckHeight = 75;
+        protected readonly char separator = ';';
+
         public bool Body { private set; get; }
 
         public Truck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool body, bool design)
@@ -21,6 +23,24 @@ namespace WindowsFormsTrucks
             DopColor = dopColor;
             Body = body;
             Design = design;
+        }
+        public Truck(string info)
+        {
+            string[] strs = info.Split(separator);
+            if (strs.Length == 6)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+                DopColor = Color.FromName(strs[3]);
+                Body = Convert.ToBoolean(strs[4]);
+                Design = Convert.ToBoolean(strs[5]);
+                
+            }
+        }
+        public override string ToString()
+        {
+            return $"{MaxSpeed}{separator}{Weight}{separator}{MainColor.Name}{separator}{DopColor.Name}{separator}{Body}{separator}{Design}";
         }
         protected Truck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool design, int truckWidth, int truckHeight)
         {
@@ -63,7 +83,6 @@ namespace WindowsFormsTrucks
                     break;
             }
         }
-
         public override void DrawTruck(Graphics g)
         {
             Brush wil = new SolidBrush(Color.Black);

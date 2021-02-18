@@ -64,5 +64,13 @@ namespace WindowsFormsTrucks
                 g.DrawLine(pen, i * place_Width, 0, i * place_Width, (pictureHeight / place_Height) * place_Height);
             }
         }
+        public T GetNext(int index)
+        {
+            if (index < 0 || index >= Depot.Count)
+            {
+                return null;
+            }
+            return Depot[index];
+        }
     }
 }

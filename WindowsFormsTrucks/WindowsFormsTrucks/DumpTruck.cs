@@ -11,9 +11,26 @@ namespace WindowsFormsTrucks
     {
         public bool Back { private set; get; }
         public DumpTruck(int maxSpeed, float weight, Color mainColor, Color dopColor, bool back, bool design)
-            : base(maxSpeed, weight, mainColor, dopColor, design, 210, 75)
+            : base(maxSpeed, weight, mainColor, dopColor,design, 210, 75)
         {
             Back = back;
+        }
+        public DumpTruck(string info) : base(info)
+        {
+            string[] strs = info.Split(separator);
+            if (strs.Length == 7)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+                DopColor = Color.FromName(strs[3]);
+                Design = Convert.ToBoolean(strs[5]);    
+                Back = Convert.ToBoolean(strs[6]);
+            }
+        }
+        public override string ToString()
+        {
+            return $"{base.ToString()}{separator}{Back}";
         }
         public override void DrawTruck(Graphics g)
         {

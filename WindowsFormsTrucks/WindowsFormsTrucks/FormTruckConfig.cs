@@ -81,7 +81,7 @@ namespace WindowsFormsTrucks
                     truck = new Truck((int)numericUpDownMaxSpeed.Value, (int)numericUpDownWeight.Value, Color.Orange, Color.Yellow, checkBoxBody.Checked, checkBoxDesign.Checked);
                     break;
                 case "гоночный автомобиль":
-                    truck = new DumpTruck((int)numericUpDownMaxSpeed.Value, (int)numericUpDownWeight.Value, Color.White, Color.Blue, checkBoxBody.Checked, checkBoxDesign.Checked);
+                    truck = new DumpTruck((int)numericUpDownMaxSpeed.Value, (int)numericUpDownWeight.Value, Color.White, Color.Blue, checkBoxBody.Checked,checkBoxDesign.Checked);
                     break;
             }
             Draw();
