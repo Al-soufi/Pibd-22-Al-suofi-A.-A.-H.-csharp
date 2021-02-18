@@ -16,12 +16,13 @@ namespace WindowsFormsTrucks
         private readonly int Pic_Height;
         private readonly char separator = ':';
 
-        public ParkingCollection(int pic_Width, int Pic_Height)
+        public ParkingCollection(int Pic_Width, int Pic_Height)
         {
             parkingStages = new Dictionary<string, Parking<Vehicle>>();
-            this.Pic_Width = pic_Width;
+            this.Pic_Width = Pic_Width;
             this.Pic_Height = Pic_Height;
         }
+
         public void AddParking(string name)
         {
             if (parkingStages.ContainsKey(name))
@@ -55,7 +56,7 @@ namespace WindowsFormsTrucks
             byte[] info = new UTF8Encoding(true).GetBytes(text);
             stream.Write(info, 0, info.Length);
         }
-        public bool SaveData(string filename)
+        public void SaveData(string filename)
         {
             if (File.Exists(filename))
             {
@@ -70,28 +71,24 @@ namespace WindowsFormsTrucks
                     ITransport truck = null;
                     for (int i = 0; (truck = level.Value.GetNext(i)) != null; i++)
                     {
-                        if (truck != null)
+                        if (truck.GetType().Name == "Truck")
                         {
-                            if (truck.GetType().Name == "Truck")
-                            {
-                                WriteToFile($"Truck{separator}", fs);
-                            }
-                            if (truck.GetType().Name == "DumpTruck")
-                            {
-                                WriteToFile($"DumpTruck{separator}", fs);
-                            }
-                            WriteToFile(truck + Environment.NewLine, fs);
+                            WriteToFile($"Truck{separator}", fs);
                         }
+                        if (truck.GetType().Name == "DumpTruck")
+                        {
+                            WriteToFile($"DumpTruck{separator}", fs);
+                        }
+                        WriteToFile(truck + Environment.NewLine, fs);
                     }
                 }
             }
-            return true;
         }
-        public bool LoadData(string filename)
+        public void LoadData(string filename)
         {
             if (!File.Exists(filename))
             {
-                return false;
+                throw new FileNotFoundException();
             }
             string bufferTextFromFile = "";
             using (FileStream fs = new FileStream(filename, FileMode.Open))
@@ -111,7 +108,7 @@ namespace WindowsFormsTrucks
             }
             else
             {
-                return false;
+                throw new Exception("Неверный формат файла");
             }
             Vehicle truck = null;
             string key = string.Empty;
@@ -135,13 +132,11 @@ namespace WindowsFormsTrucks
                 {
                     truck = new DumpTruck(strs[i].Split(separator)[1]);
                 }
-                var result = parkingStages[key] + truck;
-                if (!result)
+                if (!(parkingStages[key] + truck))
                 {
-                    return false;
+                    throw new Exception("Не удалось загрузить автомобиль на парковку");
                 }
             }
-            return true;
         }
     }
 }

@@ -147,7 +147,6 @@
             // Set_Truck
             // 
             this.Set_Truck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
             this.Set_Truck.Location = new System.Drawing.Point(1025, 350);
             this.Set_Truck.Name = "Set_Truck";
             this.Set_Truck.Size = new System.Drawing.Size(117, 50);
@@ -179,19 +178,19 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(97, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // lodeToolStripMenuItem
             // 
             this.lodeToolStripMenuItem.Name = "lodeToolStripMenuItem";
-            this.lodeToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.lodeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lodeToolStripMenuItem.Text = "Load";
             this.lodeToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 

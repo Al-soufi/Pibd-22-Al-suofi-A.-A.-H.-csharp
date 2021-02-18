@@ -18,6 +18,7 @@ namespace WindowsFormsTrucks
         public Color MainColor { protected set; get; }
         public Color DopColor { protected set; get; }
         public bool Design { protected set; get; }
+
         public void Position(int x, int y, int width, int height)
         {
             start_X = x;

@@ -28,7 +28,7 @@ namespace WindowsFormsTrucks
         {
             if (parking.Depot.Count >= parking.MaxCount)
             {
-                return false;
+                throw new ParkingOverflowException();
             }
             parking.Depot.Add(truck);
             return true;
@@ -37,7 +37,7 @@ namespace WindowsFormsTrucks
         {
             if (index < -1 || index > parking.Depot.Count)
             {
-                return null;
+                throw new ParkingNotFoundException(index);
             }
             T truck = parking.Depot[index];
             parking.Depot.RemoveAt(index);
