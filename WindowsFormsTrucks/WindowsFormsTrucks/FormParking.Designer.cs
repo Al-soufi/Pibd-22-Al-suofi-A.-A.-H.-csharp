@@ -168,10 +168,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxParking)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
+
         private System.Windows.Forms.GroupBox groupBoxParking;
         private System.Windows.Forms.Button Take;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxParking;
