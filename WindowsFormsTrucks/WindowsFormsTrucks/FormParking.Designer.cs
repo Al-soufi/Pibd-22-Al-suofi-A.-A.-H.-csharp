@@ -147,6 +147,7 @@
             // Set_Truck
             // 
             this.Set_Truck.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.Set_Truck.Location = new System.Drawing.Point(1025, 350);
             this.Set_Truck.Name = "Set_Truck";
             this.Set_Truck.Size = new System.Drawing.Size(117, 50);
@@ -227,7 +228,6 @@
             this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
