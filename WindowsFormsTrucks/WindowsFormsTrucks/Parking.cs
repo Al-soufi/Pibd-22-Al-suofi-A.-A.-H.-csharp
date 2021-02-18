@@ -9,78 +9,59 @@ namespace WindowsFormsTrucks
 {
     public class Parking<T> where T : class, ITransport
     {
-        private T[] Depot;
-        private int Pic_Width { get; set; }
-        private int Pic_Height { get; set; }
-
-        private const int place_Width = 220;
-        private const int place_Height = 90;
-        public Parking(int sizes, int pic_Width, int pic_Height)
+        private readonly List<T> Depot;
+        private readonly int MaxCount;
+        private readonly int pictureWidth;
+        private readonly int pictureHeight;
+        private readonly int place_Width = 210;
+        private readonly int place_Height = 85;
+        public Parking(int pic_Width, int pic_Height)
         {
-            Depot = new T[sizes];
-            Pic_Width = pic_Width;
-            Pic_Height = pic_Height;
-            for (int i = 0; i < Depot.Length; i++)
-            {
-                Depot[i] = null;
-            }
+            int width = pic_Width / place_Width;
+            int height = pic_Height / place_Height;
+            MaxCount = width * height;
+            pictureWidth = pic_Width;
+            pictureHeight = pic_Height;
+            Depot = new List<T>();
         }
-
-        public static int operator +(Parking<T> parking, T truck)
+        public static bool operator +(Parking<T> parking, T truck)
         {
-            for (int i = 0; i < parking.Depot.Length; i++)
+            if (parking.Depot.Count >= parking.MaxCount)
             {
-                if (parking.CheckFreePlace(i))
-                {
-                    parking.Depot[i] = truck;
-                    parking.Depot[i].Position(5 + i / 5 * place_Width + 5,
-                        i % 5 * place_Height + 5,
-                        parking.Pic_Width, parking.Pic_Height);
-                    return i;
-                }
+                return false;
             }
-            return -1;
+            parking.Depot.Add(truck);
+            return true;
         }
         public static T operator -(Parking<T> parking, int index)
         {
-            if (index < 0 || index > parking.Depot.Length)
+            if (index < -1 || index > parking.Depot.Count)
             {
                 return null;
             }
-            if (!parking.CheckFreePlace(index))
-            {
-                T truck = parking.Depot[index];
-                parking.Depot[index] = null;
-                return truck;
-            }
-            return null;
-        }
-        private bool CheckFreePlace(int index)
-        {
-            return Depot[index] == null;
+            T truck = parking.Depot[index];
+            parking.Depot.RemoveAt(index);
+            return truck;
         }
         public void Draw(Graphics g)
         {
             DrawMarking(g);
-            for (int i = 0; i < Depot.Length; i++)
+            for (int i = 0; i < Depot.Count; i++)
             {
-                if (!CheckFreePlace(i))
-                {
-                    Depot[i].DrawTruck(g);
-                }
+                Depot[i].Position(i / 6 * place_Width, i % 6 * place_Height, pictureWidth, pictureHeight);
+                Depot[i].DrawTruck(g);
             }
         }
         private void DrawMarking(Graphics g)
         {
             Pen pen = new Pen(Color.Black, 3);
-            for (int i = 0; i < Depot.Length / 5; i++)
+            for (int i = 0; i < pictureWidth / place_Width; i++)
             {
-                for (int j = 0; j < 6; ++j)
+                for (int j = 0; j < pictureHeight / place_Height + 1; ++j)
                 {
-                    g.DrawLine(pen, i * place_Width, j * place_Height,
-                    i * place_Width + 150, j * place_Height);
+                    g.DrawLine(pen, i * place_Width, j * place_Height, i * place_Width + 170  , j * place_Height);
                 }
-                g.DrawLine(pen, i * place_Width, 0, i * place_Width, 450);
+                g.DrawLine(pen, i * place_Width, 0, i * place_Width, (pictureHeight / place_Height) * place_Height);
             }
         }
     }
